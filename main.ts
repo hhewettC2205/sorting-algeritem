@@ -1,17 +1,30 @@
+function Sorting () {
+    for (let index = 0; index < 4; index++) {
+        if (list[Value] > list[value_2]) {
+            list.insertAt(0, 0)
+        } else {
+        	
+        }
+        Value += 1
+        Value += 1
+    }
+}
 function Number_list () {
     Ask_for_number = game.askForNumber("type a number wanted in the list")
     list.push(Ask_for_number)
     Ask_number_2 = game.ask("do you want another number in your list?")
-    if (true) {
+    if (Ask_number_2) {
         Number_list()
-    } else {
-        game.splash("")
     }
+    game.splash(list._pickRandom())
 }
 let Ask_number_2 = false
 let Ask_for_number = 0
 let list: number[] = []
-let number_of_questions_ask = 0
+let value_2 = 0
+let Value = 0
+Value = 0
+value_2 = 1
 let Inital_ask = game.askForNumber("type a number wanted in the list")
 Number_list()
 scene.setBackgroundImage(img`
